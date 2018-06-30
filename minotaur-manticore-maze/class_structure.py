@@ -25,12 +25,9 @@ class Bounds():
         pass
 
 
-class Item():
+class Items():
 
     def __init__(self, coordinate):
-        pass
-
-    def find_item(self):
         pass
 
 
@@ -93,5 +90,8 @@ class HiddenDoor(Scene):
 
 class Progress():
 
-    def bar(self, secs, prefix):
+    def __init__(self, secs, prefix):
+        pass
+
+    def bar(self):
         pass
