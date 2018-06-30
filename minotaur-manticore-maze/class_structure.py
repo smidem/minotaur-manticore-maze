@@ -12,13 +12,16 @@ class Navigation():
     def move(self, direction):
         pass
 
+    def which_way(self):
+        pass
+
 
 class Boundary():
 
     def __init__(self, coordinate):
         pass
 
-    def find_boundary(self):
+    def interpret(self):
         pass
 
 
