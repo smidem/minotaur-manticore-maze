@@ -1,16 +1,18 @@
 from tqdm import tqdm
-import time
+from time import sleep
 
 
 class Progress():
 
-    def bar(self, secs, prefix):
+    def __init__(self, secs, prefix):
         self.secs = secs
         self.prefix = prefix
+
+    def bar(self):
         with tqdm(total=100,
-                  ncols=75,
+                  ncols=65,
                   bar_format='{l_bar}{bar}|',
-                  desc=prefix) as pbar:
+                  desc=self.prefix) as pbar:
             for i in range(100):
                 pbar.update(1)
-                time.sleep(secs)
+                sleep(self.secs)
