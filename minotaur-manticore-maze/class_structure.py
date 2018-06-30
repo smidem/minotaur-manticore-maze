@@ -16,7 +16,7 @@ class Navigation():
         pass
 
 
-class Boundary():
+class Bounds():
 
     def __init__(self, coordinate):
         pass
